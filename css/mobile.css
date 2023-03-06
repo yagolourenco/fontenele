@@ -1,0 +1,690 @@
+#gallery {
+    background-image: url("../img/foto3.png");
+}
+
+
+#showcase{
+  
+    background-image: url("../img/foto1.png");
+
+
+}
+
+
+/*<!------------------------------------------------------------------------- Porque é contratar ----------------------------------------------------------------->*/
+
+#importante{
+ background-image: url("../img/foto3.png");
+
+}
+
+
+/* <!------------------------------------------------------------------------- Formulário ----------------------------------------------------------------->*/
+
+
+
+.operadoras{
+    background-image: url("../img/foto3.png");
+
+}
+
+
+/*<!------------------------------------------------------------------------- Mapa ----------------------------------------------------------------->*/
+
+
+.mapa{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap:1rem;
+    justify-items: center;
+   
+    background-blend-mode: color;
+    padding: 3rem;
+    background-color: black;
+}
+
+.mapa_m{
+    width: 100%;
+}
+
+.mapa h1{
+    margin-top: 1rem;
+    color: #eee;
+}
+
+/*<!------------------------------------------------------------------------- Carrosel  ----------------------------------------------------------------->*/
+
+
+#carrosel {
+    background-image: url("../img/foto3.png") ;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.74);
+    background-blend-mode: color;
+}
+
+
+/*<!------------------------------------------------------------------------- Nav-Bar  ----------------------------------------------------------------->*/
+
+.header-nav{
+    
+    background-blend-mode: color;
+    position: absolute;
+    width: 100%;
+}
+
+.nav-bar {
+    padding: 1.5rem 4rem;    
+}
+
+.nav-list{
+    display: none;
+}
+
+.mobile-menu-icon {
+    display: block;
+}
+
+.mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding-top: 0.7rem;    
+}
+
+.menu-mobile{
+    background-color: rgba(0, 0, 0, 0.534);
+    transition: all .2s;
+}
+
+.open{
+    height: 10rem;
+}
+
+.nav-item{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+}
+
+/***********************************************/
+.img_btn2{
+    width: 9rem;
+}
+
+
+/*-----------------------------------------------------------Formulário --------------------*/
+
+.formu-body{
+    background-image: url("../img/foto5.png");
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap:1rem;
+    justify-items: center;
+    background-color: rgba(0, 0, 0, 0.74);
+    background-blend-mode: color;
+    justify-content: center;
+    
+}
+
+.formuesquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+
+}
+
+#showcase-container2 h3{
+    padding: 1rem;
+    color: rgb(210, 233, 8);
+    padding-top: 0rem;
+}
+
+.operadoras{
+    padding-bottom:  5rem;
+}
+
+.formu {
+    background: rgba(255, 255, 255, 0.233);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 3rem;
+    align-items: center;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-radius: 5px;
+    box-shadow: 5px 10px 9px #5c5c5c60;
+    margin-right: 0rem;
+    width: 20rem;
+}
+
+
+.formu h1{
+   font-size: 2rem;
+}
+
+
+/*<!------------------------------------------------------------------------- Fim Background images  ----------------------------------------------------------------->*/
+
+
+
+#testimonials {
+    width: 100%;
+    background-blend-mode: color;
+}
+
+
+#navbar {
+    height: 120px;
+}
+
+#navbar-container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+    gap: 1.5rem;
+}
+
+#navbar-items {
+    flex-direction: column;
+    text-align: center;
+    width: 150px;
+    
+}
+
+/*Navbar*/
+.nav-button{
+    border: 0;
+    border-radius: 20px;
+    padding: 6px;
+    background-color: rgb(255, 255, 255);
+    margin: 8px;
+    cursor: pointer;
+}
+
+#navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    color: #eee;
+    height: 4rem;
+    position: fixed;
+}
+
+.nav-menu-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-menu-text h2{
+    font-size: 1rem;
+}
+
+.LogoPLV {
+    font-size: 1rem;
+    
+}
+
+#navbar-container{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overlay{
+    width: 0;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.9);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 34px;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+    color: rgb(250, 250, 250);
+}
+
+.overlay .closebtn{
+    position: absolute;
+    font-size: 60px;
+}
+
+
+#navbar-items li:nth-child(2) {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+
+/*Botoões flutuantes*/
+
+#botoes_flutuantes{
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    font-size: 25px;
+    
+}
+
+.box{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+
+
+#pzada{
+    transform: translate(50px);
+    color:rgb(250, 250, 250);
+    padding-left: 0.75rem;
+}
+
+.box .icon{
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.whatsapp {
+    background-color:green ;
+}
+
+.instagram {
+    background-color:rgb(255, 72, 0) ;
+}
+
+.gmail {
+    background-color:rgb(7, 7, 7) ;
+}
+
+
+
+
+/* ------------------------------------------------------------------------- Showcase  ------------------------------------------------------------------------- */
+
+.distance{
+    margin-bottom: 4rem;
+}
+
+#showcase-container {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    width: 20rem;
+    text-align: justify;
+    padding-top: 5rem;
+}
+
+#showcase-container h2 {
+    font-size: 2.0rem;
+    
+}
+
+#showcase-container p{
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+#showcase-container a{
+    font-size: 1.0rem;
+    background-color: white;
+    margin-top: 1.2rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+        
+    
+}
+
+/*------------------------------------------------------------------------- Onde anunciamos -----------------------------------------------------------------*/
+#clients {
+    padding: 15px;
+    width: 100%;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+#clients-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.client {
+    width: 50%;
+}
+
+
+
+/* ------------------------------------------------------------------------- Serviços Adicionais  ------------------------------------------------------------------------- */
+
+
+#servico-container{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+    text-align: center;
+    
+}
+
+.service {
+    margin: 15px 0;
+   
+}
+
+
+
+/*Headline 1 e 2*/
+#showcase-container a{
+    display: block;
+    text-transform: uppercase;    
+}
+.headline1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 1rem;
+    
+    
+}
+.headline1 #titulo_retracao{
+    color: #222;
+}
+
+.headline2{
+    font-size: 0.7rem;
+    padding-bottom: 2px;
+    color: #dbdbdbcb;
+    padding: 0.5rem;
+}
+
+/*Formas de contato*/
+.btn_redes{
+    width: 100%;
+}
+
+.btn_redes_a{
+    width: 3rem;
+}
+
+#botoes_redes .Hfooter{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+
+}
+
+#botoes_redes{
+    padding-bottom:  3rem;
+}
+
+/*Importante*/
+#importante {
+    width: 100%;
+    
+    
+}
+
+#importante-container{
+    width: 100%;
+}
+
+.itens {
+ width: 100%;
+}
+
+.iten{
+ 
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: justify;
+    padding: 1.5rem;
+}
+
+/*----------------------------- Dúvidas -----------------------------------*/
+
+
+/*********************************************************/
+
+#carrosel{
+    padding-top: 2rem;
+    min-height: 42vh;
+ }
+
+
+ .container-slider{
+    margin-top: 8rem;
+}
+
+#prev-button, #next-button{
+    width: 2rem;
+    height: 1rem;
+}
+
+/*<!------------------------------------------------------------------------- Galeria ----------------------------------------------------------------->*/
+
+
+
+
+/* ------------------------------------------------------------------------- Testimonials ------------------------------------------------------------------------- */
+.testimonial {
+    flex-direction: column;
+    text-align: center;
+    background: #3333333d;
+}
+
+.testimonial p{
+    color: #eee;
+}
+
+/* Gallery */
+
+
+#gallery .headline1{
+    color: #fff;
+
+}
+
+#gallery .headline2{
+    color: #fff;
+    padding-bottom: 2rem;
+}
+
+#gallery-container{
+    padding: 1.3rem;
+}
+
+.mostramais{
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    
+}
+
+.opendiv{
+    height: 50rem;
+}
+
+.gallery-image {
+    display: inline-block;
+    width: 120%;
+    border-radius: 5px;
+}
+
+#btnLeiaMais{
+
+    padding: 20px 30px;
+    font-size: 0.8rem;
+    background: rgb(253, 253, 253);
+    border-radius: 100px;
+    transition: background 500ms ease;
+    animation:  neon 1s alternate infinite ease-in-out;
+    --cor-neon: rgba(211, 190, 0, 0.397);
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+}
+
+.logo{
+    display: flex;
+    text-align: center;
+}
+
+
+ /* galaxys */
+ @media (min-width: 360px) and (max-width: 374px) {
+      
+    .opendiv{
+        height: 55rem;
+    }
+
+    .logo-nav-dois{
+        width: 8.5rem;
+    }
+    
+}
+
+
+/* iphone 12 mini, iphone 13 mini, iphone 6s, iphone 7, iphone 8, iphone xs, iphone x, iphone se 2020, iphone 11 pro */
+
+@media (min-width: 375px) and (max-width: 383px) {
+    
+    /*----------------------------- Dúvidas -----------------------------------*/
+    
+    .opendiv{
+        height: 60rem;
+    }
+    .logo-nav-dois{
+        width: 9rem;
+    }
+    
+    }
+
+  
+
+
+    /* iphone 14, iphone 13, iphone 13 pro, iphone 12, iphone 12 pro */
+
+@media (min-width: 384px) and (max-width: 391px) {
+    
+    /*----------------------------- Dúvidas -----------------------------------*/
+    
+   
+
+    .opendiv{
+        height: 65rem;
+    }
+    .logo-nav-dois{
+        width: 9.5rem;
+    }
+    
+    }
+
+
+
+
+
+    /* iphone 6s plus, iphone 7 plus, iphone 8 plus, iphone xs max, iphone xr, iphone 11 pro max, iphone 11*/
+    @media (min-width: 392px) and (max-width: 415px) {
+      
+    
+        .opendiv{
+            height: 70rem;
+        }
+
+        .logo-nav-dois{
+            width: 10rem;
+        }
+        
+        }
+
+
+          /* iphone 12 Pro Max, iphone 13 Pro Max, iphone 14 plus */
+    @media (min-width: 416px) and (max-width: 450px) {
+      
+        .opendiv{
+            height: 65rem;
+        }
+
+        .logo-nav-dois{
+            width: 11rem;
+        }
+        
+    }
+
+    @media (min-width: 500px) and (max-width: 878px) {
+      
+        #carrosel{
+            min-height: 70vh;
+         }
+        
+         .container-slider{
+            margin-top: 13rem;
+        }
+        
+        #prev-button, #next-button{
+            width: 2rem;
+            height: 2rem;
+        
+        }
+
+        .logo-nav-dois{
+            width: 12rem;
+        }
+        
+    }
+
+    
+           

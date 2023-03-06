@@ -1,0 +1,972 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+/*https://www.youtube.com/watch?v=G4_QjTJTVlc
+46 mobile*/
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*<!------------------------------------------------------------------------- Galeria ----------------------------------------------------------------->*/
+
+.headline1{
+    color: #ffffff;
+}
+
+#gallery .headline1{
+    color: #fff;
+}
+
+#gallery .headline2{
+    color: #fff;
+    padding-top: 1rem;
+
+}
+
+#gallery-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+    padding-bottom: 1rem;
+}
+
+
+.dobtn{
+    display: flex;
+    justify-content: center;
+}
+
+#btnLeiaMais{
+
+    padding: 30px 40px;
+    font-size: 1.3rem;
+    background: rgb(253, 253, 253);
+    border-radius: 100px;
+    transition: background 500ms ease;
+    animation:  neon 1s alternate infinite ease-in-out;
+    --cor-neon: rgba(211, 190, 0, 0.397);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#btnLeiaMais:hover {
+    cursor: pointer;
+    background: rgb(217, 255, 0);
+}
+
+.gallery-image {
+    display: inline-block;
+    width: 40%;
+}
+
+.mostramais{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+    height: 0rem;
+    overflow: hidden;  
+    transition: all .5s ease-out;
+}
+
+.opendiv{
+    height: 150vh;
+}
+
+.dobtn{
+    transition: all .5s ease-out;
+}
+
+
+/*<!----------------------------------container slider--------------------------------------- Background images  ----------------------------------------------------------------->*/
+
+#carrosel{
+   min-height: 65vh;
+}
+
+.container-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 12rem;
+}
+
+.container-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+}
+
+.slider {
+    opacity: 0;
+    transition: opacity .2s ;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.on{
+    opacity: 1;
+}
+
+#prev-button, #next-button{
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prev-button img, #next-button img{
+    width: 100%;
+    height: 100%;
+}
+
+#prev-button{
+    transform: rotate(180deg);
+}
+
+
+/*<!------------------------------------------------------------------------- Inicio ----------------------------------------------------------------->*/
+
+
+
+
+/****************************/
+
+
+
+#carrosel {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color;
+}
+
+
+#showcase{
+  
+    background-image: url("../img/foto1_d.png");
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.74);
+
+}
+
+
+/*<!------------------------------------------------------------------------- Porque é contratar ----------------------------------------------------------------->*/
+
+#importante{
+ background-image: url("../img/foto2.png");
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.74);
+}
+
+
+/* <!------------------------------------------------------------------------- formulario ----------------------------------------------------------------->*/
+
+.formu-body{
+      background-image: url("../img/foto5_d.png");
+      margin: 0;
+      padding: 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: color;
+      background-color: rgba(0, 0, 0, 0.74);
+  }
+
+/*<!------------------------------------------------------------------------- Onde anunciamos ----------------------------------------------------------------->*/
+
+#clients{
+    background-image: url("/img/img4.jpg"); 
+    background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+}
+
+
+
+/*  <!------------------------------------------------------------------------- Redes Sociais ----------------------------------------------------------------->*/
+
+#botoes_redes{
+    background-color: rgb(0, 0, 0);
+}
+
+/*  <!------------------------------------------------------------------------- gallery ----------------------------------------------------------------->*/
+
+
+#gallery-container{
+    background-image: url("../img/foto4_d.png");
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.74);
+    background-blend-mode: color;
+}
+
+/*  <!------------------------------------------------------------------------- Quem sou Eu ----------------------------------------------------------------->*/
+
+  #testimonials {
+    background-color: rgb(0, 0, 0); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ 
+.operadoras{
+    background-image: url("../img/foto2.png");
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.74);
+    background-blend-mode: color;
+}
+
+
+
+
+/*<!------------------------------------------------------------------------- Fim Background images  ----------------------------------------------------------------->*/
+
+
+
+/*<!------------------------------------------------------------------------- Nav-Bar  ----------------------------------------------------------------->*/
+
+.header-nav{
+    background-blend-mode: color;
+    position: fixed; z-index: 1; width: 100%;
+    animation: fadeIn 2s;
+    
+}
+
+
+
+.logo-nav{
+    width: 60px;
+}
+
+.logo-nav-dois{
+    width: 12rem;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 6rem;
+    background-color: rgba(0, 0, 0, 0.534);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    color: #eee;
+}
+
+.nav-link{
+    color: #eee;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-list ul{
+display: flex;
+justify-content: center;
+
+}
+
+.nav-item {
+    margin: 0.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.menu-mobile{
+   padding-top: 1rem;
+    margin: 0;
+    height: 0;
+    padding: 0;
+    align-items: flex-start;
+   animation: fadeIn 2s;
+   overflow: hidden;
+}
+
+@keyframes fadeIn{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+/*<!------------------------------------------------------------------------- Inicio ----------------------------------------------------------------->*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#showcase-container a{
+   
+    text-transform: uppercase;    
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/*cor neon azul que pisca no botão*/
+@keyframes neon {
+    from {
+        filter: drop-shadow(0 0 0 var(--cor-neon));
+    }
+    to {
+        filter: drop-shadow(0 0 30px var(--cor-neon));
+    }
+}
+
+.img_btn2{
+    width: 15rem;
+}
+
+
+
+
+.headline {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+.product-image{
+    width: 15rem;
+    margin-bottom: 2rem;
+    }
+
+.product-img{
+    width: 450px;
+}
+
+.headline_second {
+    font-size: 2.2rem;
+    
+    text-align: center;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*<!------------------------------------------------------------------------- Galeria ----------------------------------------------------------------->*/
+
+
+#gallery-container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+}
+
+.imgs_gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap:30px;
+    justify-items: center;
+}
+
+.gallery-image {
+    display: inline-block;
+    width: 20rem;
+    height: 90%;
+    border-radius: 5px;
+}
+
+.frases{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pai-frases{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap:30px;
+    justify-items: center;
+
+}
+
+.pai-frases h3{
+    color: #ccaa5f;
+}
+
+.pai-frases h5{
+    color: #ffffff;
+}
+
+
+/*<!------------------------------------------------------------------------- Formulario ----------------------------------------------------------------->*/
+
+.formu-body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:1rem;
+    justify-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.formuesquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 13rem;
+    padding-left: 5rem;
+
+}
+
+
+.formuesquerda h3{
+    color: #9b9b9b;
+}
+
+.formuesquerda h1{
+    color: #fff;
+}
+
+.formuesquerdaspan{
+     color: rgb(0, 195, 255);
+}
+
+.formu {
+    background: rgba(255, 255, 255, 0.514);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 3rem;
+    align-items: center;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-radius: 5px;
+    box-shadow: 5px 10px 9px #5c5c5cb9;
+    margin-right: 4rem;
+    
+}
+
+.formu h1{
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.formu form{
+
+    width: 100%;
+    max-width: 32rem;
+    font-size: 1.125rem;
+}
+
+#forminput{
+    display: block;
+    width: 100%;
+
+    font: inherit;
+    padding: 0.8rem;
+    transition: border-color;
+
+    color: #eee;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    
+    
+}
+
+#forminput::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 255, 255);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(255, 255, 255);
+  }
+
+#formlabel{
+    display: block;
+    width: 100%;
+
+    color: rgb(0, 0, 0);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+
+    font: inherit;
+   
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+}
+
+
+#formbutton{
+    display: block;
+    width: 100%;
+
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+    background: rgb(0, 102, 255);
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    
+    transition: 0.3s;
+    margin-top: 1rem;
+    
+}
+
+#forminput:hover{
+    outline: none;
+    border-color: rgb(0, 119, 255);
+}
+
+#formbutton:hover{
+    cursor: pointer;
+    background-color: #222;
+}
+/*<!------------------------------------------------------------------------- Botões Flutuantes ----------------------------------------------------------------->*/
+
+#botoes_flutuantes{
+    position: fixed;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: right;
+    font-size: 25px;
+}
+
+.box{
+    width: 65px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 0.6rem;
+    position: relative;
+    overflow: hidden; cursor: pointer;
+    transition: all .4s ease;
+}
+/*
+.box:hover{
+    width: 230px;
+    background: rgb(0, 0, 0);
+    border-radius: 35px;
+    color: #fff;
+    box-shadow: 0 0 50px rgba(0, 255, 255, 0.253) ;
+}
+*/
+#pzada{
+    transform: translate(50px);
+    color:rgb(250, 250, 250);
+    padding-left: 0.75rem;
+}
+
+.box .icon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.whatsapp {
+    background-color:green ;
+}
+
+.instagram {
+    background-color:rgb(255, 72, 0) ;
+}
+
+.gmail {
+    background-color:rgb(7, 7, 7) ;
+}
+
+
+
+/*<!------------------------------------------------------------------------- Botões Flutuantes ----------------------------------------------------------------->*/
+
+#botoes_flutuantes{
+    position: fixed;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: right;
+    font-size: 25px;
+}
+
+.box{
+    width: 65px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 0.6rem;
+    position: relative;
+    overflow: hidden; cursor: pointer;
+    transition: all .4s ease;
+}
+/*
+.box:hover{
+    width: 230px;
+    background: rgb(0, 0, 0);
+    border-radius: 35px;
+    color: #fff;
+    box-shadow: 0 0 50px rgba(0, 255, 255, 0.253) ;
+}
+*/
+#pzada{
+    transform: translate(50px);
+    color:rgb(250, 250, 250);
+    padding-left: 0.75rem;
+}
+
+.box .icon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.whatsapp {
+    background-color:green ;
+}
+
+.instagram {
+    background-color:rgb(255, 72, 0) ;
+}
+
+.gmail {
+    background-color:rgb(7, 7, 7) ;
+}
+
+/*<!------------------------------------------------------------------------- showcase ----------------------------------------------------------------->*/
+
+#showcase {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    
+    transition: .2s ease;
+    /*overlay*/
+   
+    background-blend-mode: color;
+
+}
+
+#showcase-container {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    justify-items: center;
+    
+}
+
+#showcase-container h2 {
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#showcase-container #h22{
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;   
+    color: rgb(255, 255, 255); 
+    animation: fadeIn 2s;
+}
+
+#showcase-container #h222{
+    
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    animation: fadeIn 2s;
+}
+
+#showcase-container p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#showcase-container #pdois {
+
+    color: rgb(0, 247, 255);
+}
+
+#showcase-container a{
+    margin-top: 3rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+/*<!------------------------------------------------------------------------- Formas de contato ----------------------------------------------------------------->*/
+#botoes_redes {
+    
+    padding: 15px;
+    width: 100%;
+    
+}
+
+#div_botoes_redes {
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.fa-square-instagram{
+    color: #fff;
+}
+
+.fa-tiktok{
+    color: #fff;
+}
+
+.fa-youtube{
+    color: #fff;
+}
+
+.fa-facebook{
+    color: #fff;
+}
+
+#botoes_redes .headline{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    padding-top: 2%;
+}
+
+#botoes_redes .headline1{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+}
+
+
+.headline1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 3.5%;
+    
+    
+}
+
+.headline2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1.0%;
+    color: rgba(255, 255, 255, 0.877);
+    letter-spacing: 2px;
+}
+
+#botoes_redes .Hfooter{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+    padding-top: 3.5%;
+}
+
+
+
+
+
+
+
+
+/*<!------------------------------------------------------------------------- Operadoras ----------------------------------------------------------------->*/
+
+.operadoras .headline{
+    padding-top: 3rem;
+font-family: 'Montserrat', sans-serif;
+color: #fff;
+}
+
+.pai-operadoras{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    
+
+    border-radius: 10px;
+
+}
+
+.text-operadoras h3, p{
+margin-top: 0.25rem;
+color: rgb(0, 0, 0);
+}
+
+.text-operadoras hr{
+    margin-top: 0.25rem;
+    height: 3px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to left, rgb(177, 160, 11), rgb(255, 98, 0), rgb(17, 17, 17) );
+    }
+
+.text-operadoras{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   background-color: #fff;
+   border-radius: 3px;
+   padding: 4rem;
+}
+
+
+
+
+
+
+
+
+/*<!------------------------------------------------------------------------- Quem sou eu ----------------------------------------------------------------->*/
+.testimonial {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+
+#testimonials {
+    width: 100%;
+    padding: 20px;
+}
+
+#testimonials p{
+    color: rgb(207, 207, 207);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+#testimonials-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonial .testimonial-image {
+    height: 200px;
+    width: auto;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+#testimonials .headline{
+    color: #eee;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#testimonials .headline1{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255); 
+}
+
+
+/*<!------------------------------------------------------------------------- roda pé ----------------------------------------------------------------->*/
+
+.footer {
+    
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    background-blend-mode: color;
+   
+}
+
+.footer p{
+    
+    color: rgb(255, 255, 255);
+
+   
+}
+

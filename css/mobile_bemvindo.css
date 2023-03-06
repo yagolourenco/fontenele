@@ -1,0 +1,29 @@
+body{
+    background-image: url("../img/bemvindo/backm.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: rgba(0, 0, 0, 0.74);
+}
+
+
+#gallery {
+    width: 21rem;
+    margin: auto;
+    padding: 1rem;
+}
+
+.gallery-image {
+    width: 10rem;
+    border-radius: 5px;
+}
+
+
+.logo{
+    margin-top: 3rem;
+    width: 8rem;
+}
+
+#botoes_redes{
+    margin-top: 12rem;
+}
