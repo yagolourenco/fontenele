@@ -1055,10 +1055,14 @@ color: rgb(0, 0, 0);
             }
 
 
-            @media (min-width: 905px) and (max-width: 1033px) {
+            @media (min-width: 897px) and (max-width: 1023px) {
             
-              
-                
-                            
+            
+                .gallery-image {
+                    display: inline-block;
+                    width: 15rem;
+                    height: 90%;
+                    border-radius: 5px;
+                }
                 
                         }
